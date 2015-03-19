@@ -1,0 +1,42 @@
+@import "_constants";
+@import "_components";
+
+#content {
+    .location {
+        .location-style;
+    }
+    .nav-banner {
+        overflow: hidden;
+        .nav {
+            .nav-style(245px);
+            .kinds-container {
+                border-bottom: none;
+            }
+        }
+        .banner {
+            margin-left: 12px;
+            width: 737px;
+            height: 408px;
+            background-color: @darkGray;
+            float: left;
+        }
+    }
+
+    .hot-products {
+        margin-top: 20px;
+        &>div {
+            .vertical-center-font(18px);
+            img {
+                vertical-align: bottom;
+                margin-right: 5px;
+            }
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .product-style;
+    }
+}
+
+.mask-box-container {
+    .location-box-style;
+}

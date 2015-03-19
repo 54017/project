@@ -98,5 +98,5 @@ def get_order_list():
             items.append(item_meta)
         data['items'] = items
         order_data.append(data) 
-    return render_template('', user=u, orders=order_data)
+    return render_template('orders_list_page.html', user=u, orders=order_data)
 

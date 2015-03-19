@@ -22,7 +22,7 @@ def get_product_list_by_catx_render():
         pds, current_cat1 = _get_product_list(bd, cat1_id, cat2_id)
     except:
         abort(404)
-    return render_template('', user=u, catx=_get_catx(), current_cat1=current_cat1, products=pds)
+    return render_template('products_list_page.html', user=u, catx=_get_catx(), current_cat1=current_cat1, products=pds)
 
 # ajax
 @productbp.route('/list', methods=['POST', ])
